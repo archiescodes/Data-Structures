@@ -1,0 +1,8 @@
+const boxes = [0,1,2,3,4,6,7];
+
+function logFirstTwoBoxes(boxes){
+    console.log(boxes[0]);
+    console.log(boxes[1]);
+}
+
+logFirstTwoBoxes(boxes); //0(1)- constant time
