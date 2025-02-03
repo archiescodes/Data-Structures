@@ -1,0 +1,25 @@
+//coding efficient solutions
+function hasTwoPairsSum(array1,n){
+    for(let i = 0;i <array1.length;i++){
+        for( let j = 0;j < array1.length -1;j++){
+            if(array1[i]+array1[j] == n){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function hasPairWithSum2(arr, sum) {
+    const mySet = new Set();
+    for (let i = 0;i<arr.length;i++){
+        if(mySet.has(arr[i])){
+            return true;
+        }
+        mySet.add(sum -arr[i]);
+    }
+    return false;
+}
+
+console.log(hasTwoPairsSum([9,1,2,1,4],7));
+console.log(hasPairWithSum2([9,1,2,1,4],10));

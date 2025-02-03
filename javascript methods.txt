@@ -1,0 +1,10 @@
+//javascript methods 
+const arr1 = ['a','b','c','x'];
+const arr2 = ['l','y','z'];
+
+function containsCommonItem(array1,array2){
+    return array1.some(item => array2.includes(item))
+}
+   
+
+console.log(containsCommonItem(arr1,arr2));

@@ -1,0 +1,21 @@
+function reverseString(string){
+    if(!string || typeof string != 'string'|| string.length <2 ){
+        return 'Input not a string'
+    }
+    newString = '';
+    for (i= string.length-1;i>=0;i--){
+        newString = newString + string[i];
+    }
+    return newString;
+}
+
+function reverse2(string){
+    return string.split('').reverse().join('')
+}
+
+const reverse3 = str => [...str].reverse().join('');
+console.log("Hi, I am Archa")
+
+console.log(reverseString("Hi, I am Archa"))
+console.log(reverse2("Hi, I am Archa"))
+console.log(reverse3("Hi, I am Archa"))

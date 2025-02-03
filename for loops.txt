@@ -1,0 +1,17 @@
+//loops
+const arrayWords = ['hi','To','One'];
+
+const findArray1 = array =>{
+    array.forEach(word =>{
+        console.log(word);
+    })
+}
+
+const findArray2 = array =>{
+    for( let i of array){
+        console.log(i);
+    }
+}
+
+findArray1(arrayWords);
+findArray2(arrayWords);
