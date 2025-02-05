@@ -1,0 +1,24 @@
+function merged(array1,array2){
+    
+    array3 = array1;
+   for (let i = 0;i< array2.length;i++){
+       item = array2[i];
+       array3.push(item);
+   }
+ 
+ for(let i = 0;i< array3.length;i++){
+     for(let j =0;j< array3.length -1;j++){
+         if(array3[j] > array3[j+1]){
+             temp = array3[j];
+             array3[j] = array3[j+1];
+             array3[j+1] = temp;
+             
+         }
+     }
+ }
+  
+    return array3;
+}
+     
+
+console.log(merged([1,2,3,4],[3,4,30,40]))
